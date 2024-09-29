@@ -1,24 +1,29 @@
 ## 前言
 
-这是一个使用原生的JavaScript编写的新闻头条多页面应用。个人练手项目，希望提升自己的原生JS开发能力。该项目基于Webpack进行项目的开发与打包。虽然没有用框架，但是也是使用组件化的开发方式来开发的。
+这是一个使用原生的JavaScript编写的新闻头条多页面应用，使用组件化进行开发。
 
-## 我学到了什么
+## 技术栈
 
-- [x] 前端项目的目录结构和Webpack的工程化配置
-- [x] 原生JS如何编写一个组件，在组件中事件是怎样绑定的，数据是如何传递的
-- [x] 前端合理的利用缓存池技术和本地存储
-- [x] 一些常见的问题，使用原生JS如何解决，例如新闻的下拉加载更多，多模板的选择
-- [x] 页面之间通过localStorage来传递数据，例如新闻详情页和新闻收藏页的数据获取问题
+nodejs + express + mysql + webpack5 + es6
 
-## 本地预览
+## 项目运行
 
 ```bash
+git clone https://github.com/ZenDevon/my_news.git
+
 # 启动服务器
 cd news_server
-npm install
+npm i
 npm run start
 
-#启动项目
-npm install
+# 启动项目(本地预览)
+npm i
 npm run dev
 ```
+
+## 效果演示
+<div style="display: flex">
+<img src="https://raw.githubusercontent.com/ZenDevon/blog-img/main/Snipaste_2024-09-29_15-11-49.png" style="width: 33.33%;"/>
+<img src="https://raw.githubusercontent.com/ZenDevon/blog-img/main/Snipaste_2024-09-29_15-14-02.png" style="width: 33.33%;"/>
+<img src="https://raw.githubusercontent.com/ZenDevon/blog-img/main/Snipaste_2024-09-29_15-15-04.png" style="width: 33.33%;"/>
+</div>
