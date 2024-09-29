@@ -19,7 +19,6 @@ export default {
         const { data, pageNum } = options;
         let itemList = "",
             tpl = "";
-
         data.map((item, index) => {
             if (!item.thumbnail_pic_s) {
                 tpl = tpl0;
@@ -67,6 +66,7 @@ export default {
 
         setCurrentNews(options);
 
-        window.location.href = "detail.html?path=" + window.location.pathname
+        console.log(window.location.pathname);
+        window.location.href = "detail.html?path=" + window.location.pathname;
     }
 }

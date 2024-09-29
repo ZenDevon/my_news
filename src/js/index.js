@@ -84,11 +84,9 @@ import { setPageData, scrollToBottom } from "../utils/tools"
     async function getNewsList() {
         const { type, count, pageNum } = config;
         if (newsData[type]) {
-            // console.log("default");
             renderList(newsData[type][pageNum]);
             return;
         }
-        // console.log("poll");
         listWrapper.innerHTML = PageLoading.tpl();
         let res = await services.getNewsList(type);
         newsData[type] = setPageData(res.result, count);
