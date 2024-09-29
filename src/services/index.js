@@ -1,22 +1,19 @@
-import { HTTP } from "../lib/http";
+import ajax from "../lib/http";
 
-class Services extends HTTP {
-    getNewsList(type, count) {
-        return new Promise((resolve, reject) => {
-            this.ajax({
-                url: "/index",
-                type: "POST",
-                dataType: "JSON",
-                data: {
-                    field: type
-                },
-                success(data) {
-                    console.log(data);
-                },
-                error(err) {
-                    reject(err)
-                }
-            })
+const BASE_URL = "http://127.0.0.1:8000/news"
+
+class Services {
+    getNewsList(type) {
+        return ajax({
+            url: `${BASE_URL}/getNewsList`,
+            data: {
+                field: type
+            }
+        })
+    }
+    getNewDetail(id) {
+        return ajax({
+            url: `${BASE_URL}/getNewDetail/${id}`
         })
     }
 }

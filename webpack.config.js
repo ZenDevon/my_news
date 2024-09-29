@@ -30,7 +30,7 @@ module.exports = {
             },
             {
                 test: /\.tpl$/,
-                loader: "ejs.loader"
+                loader: "ejs-loader"
             },
             {
                 test: /\.css$/,
@@ -123,11 +123,5 @@ module.exports = {
         open: true,
         host: "localhost",
         port: 3000,
-        // proxy: {
-        //     '/api': {
-        //         target: 'http://v.juhe.cn/toutiao',
-        //         pathRewrite: { '^/api': '' },
-        //     },
-        // }
     }
 }

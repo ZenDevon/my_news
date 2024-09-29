@@ -4,10 +4,6 @@ const NEWS_TYPE = [
         title: '头条'
     },
     {
-        type: 'shehui',
-        title: '社会'
-    },
-    {
         type: 'guonei',
         title: '国内'
     },
@@ -36,9 +32,19 @@ const NEWS_TYPE = [
         title: '财经'
     },
     {
-        type: 'shishang',
-        title: '时尚'
+        type: 'youxi',
+        title: '游戏'
+    },
+    {
+        type: 'qiche',
+        title: '汽车'
+    },
+    {
+        type: 'jiankang',
+        title: '健康'
     }
 ];
 
-module.exports = NEWS_TYPE
+export {
+    NEWS_TYPE
+}
